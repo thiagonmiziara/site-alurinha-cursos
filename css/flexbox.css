@@ -1,3 +1,5 @@
+/*flex do header*/
+
 .cabecalhoPrincipal .container {
     display: flex;
     align-items: center;
@@ -5,5 +7,28 @@
 }
 
 .cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+
+/*flex do footer*/
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
     display: flex;
 }
