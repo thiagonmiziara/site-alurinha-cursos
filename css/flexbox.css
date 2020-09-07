@@ -11,6 +11,61 @@
 }
 
 
+/* flex nos links dos cursos*/
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link :nth-child(4n) {
+    margin-right: 0px;
+}
+
+conteudoPrincipal-cursos-link :nth-child(4n+1) {
+    margin-left: 0px;
+}
+
+
+/* video e vantagens*/
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+
+/* flex no mapa de cursos*/
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /** flex-direction: column;
+    flex-wrap: wrap;**/
+    flex-flow: column wrap;
+    height: 250px;
+}
+
+
 /*flex do footer*/
 
 .rodapePrincipal-patrocinadores .container {
@@ -35,38 +90,6 @@
 }
 
 
-/* flex no mapa de cursos*/
-
-.rodapePrincipal-navMap-list {
-    display: flex;
-    /** flex-direction: column;
-    flex-wrap: wrap;**/
-    flex-flow: column wrap;
-    height: 250px;
-}
-
-
-/* flex nos links dos cursos*/
-
-.conteudoPrincipal-cursos {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.conteudoPrincipal-cursos-link {
-    width: 23%;
-    margin: 1%;
-}
-
-.conteudoPrincipal-cursos-link :nth-child(4n) {
-    margin-right: 0px;
-}
-
-conteudoPrincipal-cursos-link :nth-child(4n+1) {
-    margin-left: 0px;
-}
-
-
 /*flex mobile*/
 
 @media screen and (max-width: 768px) {
@@ -78,11 +101,20 @@ conteudoPrincipal-cursos-link :nth-child(4n+1) {
         align-items: initial;
         text-align: center;
     }
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
     .conteudoPrincipal-cursos {
         flex-direction: column;
     }
     .conteudoPrincipal-cursos-link {
         width: 100%;
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
     }
     .rodapePrincipal-navMap-list {
         height: auto;
